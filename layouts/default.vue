@@ -38,6 +38,14 @@
       <v-spacer />
       <v-btn
         icon
+        :to="{ name: 'search' }"
+        :active="$route.name === 'search'"
+        title="Search by license plate"
+      >
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <v-btn
+        icon
         @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-format-list-bulleted</v-icon>
